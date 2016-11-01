@@ -11,7 +11,7 @@ spec:
       serviceAccountName: openshift-pruner
       containers:
         - name: "openshift-pruner"
-          image: "ausnimbus/openshift-pruner:latest"
+          image: "cloudstrap/openshift-pruner:latest"
     replicas: 1
     triggers:
       - type: "ConfigChange"

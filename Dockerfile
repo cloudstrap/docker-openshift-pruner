@@ -1,6 +1,6 @@
 FROM openshift/origin
 
-MAINTAINER AusNimbus <support@ausnimbus.com.au>
+MAINTAINER CloudStrap <support@cloudstrap.io>
 
 LABEL io.k8s.display-name="OpenShift Pruner" \
       io.k8s.description="Prunes old builds, deployments and images."
