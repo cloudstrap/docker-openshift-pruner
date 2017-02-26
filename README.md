@@ -29,6 +29,6 @@ oc create serviceaccount openshift-pruner
 oc adm policy add-cluster-role-to-user edit system:serviceaccount:cloudstrap-infra:openshift-pruner
 oc adm policy add-cluster-role-to-user system:image-pruner system:serviceaccount:cloudstrap-infra:openshift-pruner
 
-oc create -f openshift-pruner.yaml
+oc create -f https://raw.githubusercontent.com/cloudstrap/docker-openshift-pruner/master/openshift-pruner.yaml
 oc scale --replicas=1 dc/openshift-pruner
 ```
